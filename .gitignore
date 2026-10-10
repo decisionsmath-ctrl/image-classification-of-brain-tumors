@@ -1,0 +1,60 @@
+# ---- Data: NEVER commit MRI images or dataset archives -------------------------------------
+data/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.dcm
+*.nii
+*.nii.gz
+# Images are ignored everywhere except the (optional) documentation figures folder.
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+!docs/figures/*.png
+
+# ---- Generated artifacts (recreated by the code) --------------------------------------------
+# Everything under artifacts/ is ignored EXCEPT the small deployable model + its metadata,
+# so the Streamlit app can be deployed from the repository.
+artifacts/*
+!artifacts/models/
+artifacts/models/*
+!artifacts/models/final_model.keras
+!artifacts/models/app_metadata.json
+results/
+logs/
+runs/
+*.log
+*.h5
+checkpoints/
+
+# ---- Python / environments / caches ---------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# ---- Secrets (never commit) ------------------------------------------------------------------
+kaggle.json
+.kaggle/
+*.pem
+*.key
+secrets.toml
+.streamlit/secrets.toml
+
+# ---- OS / editors ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

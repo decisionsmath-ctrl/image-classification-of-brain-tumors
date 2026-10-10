@@ -1,0 +1,17 @@
+# Core (Keras 3 is required: TensorFlow >= 2.16 ships it)
+tensorflow>=2.16,<3
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+scikit-learn>=1.3
+Pillow>=10.0
+PyYAML>=6.0
+
+# Web app (width="stretch" for images needs a recent Streamlit)
+streamlit>=1.50
+
+# OPTIONAL - only for `python scripts/inspect_dataset.py --download` (Kaggle API access):
+# kaggle>=1.6
+
+# Deployment tip: on small hosts you may replace `tensorflow` by `tensorflow-cpu`
+# (same API, smaller download, no GPU support).
