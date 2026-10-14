@@ -1,5 +1,5 @@
 # Core (Keras 3 is required: TensorFlow >= 2.16 ships it)
-tensorflow>=2.16,<3
+tensorflow-cpu>=2.16,<3
 numpy>=1.26
 pandas>=2.0
 matplotlib>=3.8
